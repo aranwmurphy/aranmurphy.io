@@ -4,3 +4,11 @@ $mdi-font-path: '~@mdi/font/fonts';
 @import "variables";
 @import "~bulma/bulma";
 @import "overrides";
+
+.navbar, .hero-foot > .container {
+    padding: 8px;
+}
+
+section {
+    padding: 48px;
+}
