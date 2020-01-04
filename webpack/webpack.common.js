@@ -23,7 +23,7 @@ module.exports = {
       { from: path.resolve(__dirname, '../public'), to: 'public' }
     ]),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, '../src/index.html'),
+      template: path.resolve(__dirname, '../src/index.hbs'),
       favicon: path.resolve(__dirname, "../public/favicon.ico")
     })
   ],
@@ -38,6 +38,10 @@ module.exports = {
         test: /\.mjs$/,
         include: /node_modules/,
         type: 'javascript/auto'
+      },
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader', 
       },
       {
         test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
