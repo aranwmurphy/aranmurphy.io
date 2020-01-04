@@ -10,5 +10,11 @@ $mdi-font-path: '~@mdi/font/fonts';
 }
 
 section {
-    padding: 48px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#contact {
+    background-color: rgba($blue, .3);
+    border-top: 1px solid $primary;
 }
