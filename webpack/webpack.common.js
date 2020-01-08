@@ -27,8 +27,8 @@ module.exports = {
       favicon: path.resolve(__dirname, "../public/favicon.ico")
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, '../src/experience.hbs'),
-      filename: "experience/index.html", 
+      template: path.resolve(__dirname, '../src/skills.hbs'),
+      filename: "skills/index.html", 
       favicon: path.resolve(__dirname, "../public/favicon.ico"),
     })
   ],
