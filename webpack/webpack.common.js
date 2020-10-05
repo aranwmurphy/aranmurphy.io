@@ -27,11 +27,16 @@ module.exports = {
       template: path.resolve(__dirname, '../src/index.hbs'),
       favicon: path.resolve(__dirname, '../public/favicon.ico'),
     }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, '../src/error.hbs'),
+      filename: 'errors/index.html',
+      favicon: path.resolve(__dirname, '../public/favicon.ico'),
+    }),
     /*
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../src/skills.hbs'),
       filename: "skills/index.html",
-      favicon: path.resolve(__dirname, "../public/favicon.ico"),
+      favicon: path.resolve(__dirname, '../public/favicon.ico'),
     }),
     */
   ],
