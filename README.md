@@ -18,3 +18,5 @@ You will also see any lint errors in the console.
 Builds the app for production to the `build` folder.<br />
 It correctly bundles the application in production mode and optimizes the build for the best performance.
 
+## License
+MIT
